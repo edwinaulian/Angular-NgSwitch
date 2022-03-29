@@ -1,0 +1,10 @@
+<div>
+  <container-element [ngSwitch]="color">
+    <!-- the same view can be shown in more than one case -->
+    <div *ngSwitchCase="'red'">This is a red</div>
+    <div *ngSwitchCase="'yellow'">This is a yellow</div>
+    <div *ngSwitchCase="'blue'">This is a blue</div>
+    <!--default case when there are no matches -->
+    <div *ngSwitchDefault>Pick color</div>
+  </container-element>
+</div>
